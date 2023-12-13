@@ -6,3 +6,106 @@
 body {
   background: peachpuff;
 }
+
+.container  {
+  display: flex;
+  flex-direction: row;
+  max-width: 1200px;
+  margin: 0 auto;
+  border: 1px solid black;
+  gap: 5px;
+  flex-wrap: wrap;
+  padding: 1rem;
+  max-height: 600px; 
+}
+
+.flex-item {
+  background-color: gray;
+  padding: 2rem;
+}
+
+.a {
+ flex-basis: 100%;
+ order: -5;
+}
+
+.b {
+  flex-basis: 18%;
+  order: -4;
+}
+
+.c {
+  flex-basis: 18%;
+  order: -3;
+}
+
+.d {
+  flex-basis: 18%;
+  order: -2;
+}
+
+.e {
+  flex-basis: 18%;
+}
+
+.f {
+  flex-basis: 18%;
+}
+
+.g {
+  flex-basis: 18%;
+}
+
+.h {
+ order: -1;
+ flex-basis: 7.5%;
+ transform: translate(75px, 45px) scale(2);
+}
+
+
+@media (max-width: 1000px) {
+
+.container {
+  height: 600px;
+}
+
+.a {
+ flex-basis: 100%;
+ order: -5;
+}
+
+.b {
+  flex-basis: 25.7%;
+  order: -4;
+}
+
+.c {
+  flex-basis: 25.7%;
+  order: -3;
+}
+
+.d {
+  flex-basis: 25.7%;
+  order: -2;
+}
+
+.e {
+  flex-basis: 25.7%;
+}
+
+.f {
+  flex-basis: 25.7%;
+}
+
+.g {
+  flex-basis: 25.7%;
+}
+
+.h {
+ order: 0;
+ flex-basis: 100%;
+ transform: translate(0px, 0px) scale(1);
+ min-height: 50%;
+}
+
+}
