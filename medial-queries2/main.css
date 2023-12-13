@@ -1,8 +1,92 @@
 
-* {
-  border: 1px solid black;
-}
-
 body {
   background: papayawhip;
 }
+
+.container {
+  display: flex;
+  flex-direction: row;
+  max-width: 1000px;
+  margin: 0 auto;
+  border: 1px solid black;
+  gap: 5px;
+  flex-wrap: wrap;
+  padding: 1rem;
+  
+}
+
+.flex-item {
+  background-color: gray;
+  padding: 2rem;
+}
+
+.a {
+  flex-basis: 100%;
+  order: -3;
+}
+
+.b {
+  flex-basis: 73.8%;
+  order: -2;
+}
+
+.c {
+  flex-basis: 20%;
+}
+
+.d {
+  flex-basis: 20%;
+}
+
+.e {
+  flex-basis: 20%;
+}
+
+.f {
+  /* (same difference.. ?)transform: translate( 60%, 60%) scale(2); */
+  translate: 60% 54%; 
+  scale: 2.07;
+  order: -1 ;
+  width: 2.2%;
+
+}
+
+@media (max-width: 1000px) {
+
+  .container {
+    height: 1000px;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+.a {
+  flex-basis: 100%;
+}
+
+.b {
+  flex-basis: 100%;
+  min-height: 40%;
+
+}
+
+.c {
+  flex-basis: 26%;
+}
+
+.d {
+  flex-basis: 26%;
+}
+
+.e {
+  flex-basis: 26%;
+}
+
+.f {
+ flex-basis: 100%;
+ order: 0;
+ scale: 1;
+ width: 0%;
+ translate: 0% 0%;
+}
+
+  }
